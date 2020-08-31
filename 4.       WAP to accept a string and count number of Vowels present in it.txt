@@ -1,0 +1,30 @@
+import java.util.*;
+class vowel{
+    Scanner sn=new Scanner(System.in);
+   
+    void ok(){
+        String p=sn.nextLine();
+        int count=0 ;
+        p=p.toUpperCase();
+        int len=p.length();
+        for(int i=0;i<len;i++)
+        {
+            if(p.charAt(i)=='A' || p.charAt(i)=='E' || p.charAt(i)=='I' || p.charAt(i)=='O' || p.charAt(i)=='U')
+            {
+               count++;
+               
+            }
+        }
+        System.out.println(count);
+        
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Enter the word");
+		vowel obj=new vowel();
+		obj.ok();
+	}
+}
